@@ -21,7 +21,7 @@ app.get('/robots.txt', function(req, res) {
 
 import home from './routes/home.js';
 import audio from './routes/audio.js';
-import video from './routes/video.js';
+import video from './store/backup.js';
 
 app.use('/', home);
 app.use('/audio/:audio', audio);
