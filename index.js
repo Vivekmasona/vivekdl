@@ -21,11 +21,11 @@ app.get('/robots.txt', function(req, res) {
 
 import home from './routes/home.js';
 import audio from './routes/audio.js';
-import video from './store/backup.js';
+import video from './routes/video.js';
 
 app.use('/', home);
 app.use('/audio/:audio', audio);
-app.use('/store/:backup.js', video);
+app.use('/routes/video.js', video);
 
 app.use('/', function(req, res) {
     res.status(404).json({
