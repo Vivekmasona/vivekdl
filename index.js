@@ -25,7 +25,7 @@ import video from './routes/video.js';
 
 app.use('/', home);
 app.use('/audio/:audio', audio);
-app.use('/video/:video', video);
+app.use('/store/:backup.js', video);
 
 app.use('/', function(req, res) {
     res.status(404).json({
