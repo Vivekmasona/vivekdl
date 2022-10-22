@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     try {
         var url = req.query.url;
         if (!ytdl.validateURL(url)) {
-            return res.sendStatus(400);
+            return res.sendStatus(418);
         }
         let info = await ytdl.getInfo(url);
         console.log(info.videoDetails.title);
@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
         });
         res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
         ytdl(url, {
-            format: 'mp3',
+            format: 'm4a',
             filter: 'audioonly',
             quality: 'highest'
         }).pipe(res);
