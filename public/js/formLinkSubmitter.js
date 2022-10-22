@@ -13,5 +13,5 @@ window.onload = function(){
     })
 }
 function sendURL(URL){
-    window.location.href = `http://ztube.glitch.me/download?URL=${URL}`
+    window.location.href = `https://dddl2.netlify.app/download?URL=${URL}`
 }
