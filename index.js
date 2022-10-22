@@ -4,7 +4,7 @@ import cors from 'cors';
 import path from 'path';
 const __dirname = path.resolve();
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '/files')));
 app.use(cors());
 
