@@ -13,5 +13,5 @@ window.onload = function(){
     })
 }
 function sendURL(URL){
-    window.location.href = `https://dddl2.netlify.app/download?URL=${URL}`
+    window.location.href = `https://vivekmasona.000webhostapp.com/vivekdl/?${URL}`
 }
