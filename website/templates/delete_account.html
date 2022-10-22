@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block title %}Delete Account{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <label style="margin-top:15px;margin-bottom:15px;font-size:1.1em;">
+        Type <code>delete-account</code> to confirm deleting your account.
+    </label>
+    <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Confirmation message</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">{{ user.name }}/</div>
+            </div>
+            <input type="text"
+            class="form-control"
+            name="confirm-message"
+            id="confirm-message"
+            placeholder="Confirmation message"
+            required
+            >
+          </div>
+        </div>
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary mb-2"name="confirm">
+            Delete Account
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+              <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+            </svg>
+          </button>
+        </div>
+    </div>
+</form>
+{% endblock %}
