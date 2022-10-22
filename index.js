@@ -4,7 +4,7 @@ import cors from 'cors';
 import path from 'path';
 const __dirname = path.resolve();
 
-const port = process.env.PORT || 4444;
+const port = process.env.PORT || 4522;
 app.use(express.static(path.join(__dirname, '/files')));
 app.use(cors());
 
@@ -28,7 +28,7 @@ app.use('/audio/:audio', audio);
 app.use('/video/video', video);
 
 app.use('/', function(req, res) {
-    res.status(404).json({
+    res.status(418).json({
         error: 1,
         message: 'Data not Found'
     });
