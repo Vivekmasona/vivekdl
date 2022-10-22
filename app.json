@@ -1,6 +1,6 @@
 {
     "name": "video-dl",
     "description": "Youtube and Facebook Downloader.",
-    "repository": "https://github.com/mskian/video-dl",
+    "repository": "https://github.com/vivekmasona/vivekdl",
     "keywords": ["node", "express", "static"]
 }
